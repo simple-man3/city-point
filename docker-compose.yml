@@ -28,6 +28,20 @@ services:
             - mysql-master-local:/var/lib/mysql
         networks:
             - city-point
+    mysql-slave:
+        image: mysql:5.7
+        container_name: city-point-mysql-slave
+        environment:
+            MYSQL_DATABASE: city_point
+            MYSQL_USER: example
+            MYSQL_PASSWORD: secret
+            MYSQL_ROOT_PASSWORD: root_password
+        ports:
+            - 3310:3306
+        volumes:
+            - mysql-slave-local:/var/lib/mysql
+        networks:
+            - city-point
     nginx:
         image: nginx:1.17-alpine
         container_name: city-point-nginx
@@ -45,3 +59,4 @@ networks:
 
 volumes:
     mysql-master-local:
+    mysql-slave-local:

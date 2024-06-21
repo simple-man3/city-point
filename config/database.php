@@ -109,6 +109,19 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'slave' => [
+            'driver' => 'mysql',
+            'host' => env('DB_SLAVE_HOST', 'localhost'),
+            'port' => env('DB_SLAVE_PORT', '3306'),
+            'database' => env('DB_SLAVE_DATABASE', 'forge'),
+            'username' => env('DB_SLAVE_USERNAME', 'forge'),
+            'password' => env('DB_SLAVE_PASSWORD', ''),
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
     ],
 
     /*

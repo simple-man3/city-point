@@ -11,4 +11,6 @@ interface ICarRepository
      * @return Collection<Car>
      */
     public function getAll(): Collection;
+
+    public function setConnection(string $connection): void;
 }
