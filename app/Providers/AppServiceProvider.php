@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Repositories\CarRepository;
 use App\Repositories\interfaces\ICarRepository;
+use App\Services\CarService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(ICarRepository::class, CarRepository::class);
+        $this->app->when(CarService::class)
+            ->needs(ICarRepository::class)
+            ->give(fn () => CarRepository::class);
     }
 
     /**

@@ -4,8 +4,15 @@
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/simple-man3/cp-filter.git"
+        }
+    ],
     "require": {
         "php": "^8.2",
+        "cp/filter": "dev-task-1",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
     },
