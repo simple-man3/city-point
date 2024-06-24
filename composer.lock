@@ -141,12 +141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simple-man3/cp-filter.git",
-                "reference": "5b0316e612d10fd5c01b6731f75bdfd3e0cbb7a1"
+                "reference": "9e093fa882f6eb4a3bc52b52c9b0a75cfc208b96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simple-man3/cp-filter/zipball/5b0316e612d10fd5c01b6731f75bdfd3e0cbb7a1",
-                "reference": "5b0316e612d10fd5c01b6731f75bdfd3e0cbb7a1",
+                "url": "https://api.github.com/repos/simple-man3/cp-filter/zipball/9e093fa882f6eb4a3bc52b52c9b0a75cfc208b96",
+                "reference": "9e093fa882f6eb4a3bc52b52c9b0a75cfc208b96",
                 "shasum": ""
             },
             "require": {
@@ -168,7 +168,7 @@
                 "source": "https://github.com/simple-man3/cp-filter/tree/task-1",
                 "issues": "https://github.com/simple-man3/cp-filter/issues"
             },
-            "time": "2024-06-22T17:02:25+00:00"
+            "time": "2024-06-24T19:37:49+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
